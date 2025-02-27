@@ -3,8 +3,7 @@
 %What does manifacturing mean?
 \begin{quotation}
     \noindent
-    \textsf{
-        Manifacturing is a word which is derived from Latin and it means \textit{made by hand}. This is suited to a reality where most commercial goods where totally made by hand. After many years, factory appeared and the way the products were made changed a lot! In particular the attention was on the use of \textit{machines} instead of \textit{handcrafted mehtods}. In the modern era machines, people and processes to handle them are grouped in complex \textit{production systems} that not rarely are \textbf{automated} and \textbf{computerized}.  
+    \textsf{\textit{Manifacturing} is a word which is derived from Latin and it means \textit{made by hand}. This is suited to a reality where most commercial goods where totally made by hand. After many years, factory appeared and the way the products were made changed a lot! In particular the attention was on the use of \textit{machines} instead of \textit{handcrafted mehtods}. In the modern era machines, people and processes to handle them are grouped in complex \textit{production systems} that not rarely are \textbf{automated} and \textbf{computerized}.  
     }
 \end{quotation}
 
@@ -45,10 +44,34 @@ At the opposite, we find the \textbf{programmable automation}. Here there is the
 Such a type of automation is an extension of the previous with the difference that the changeover time is virtually avoided. What makes \textit{flexibility} possible is the fact that the differences between processed parts are not significant, so the changeover necessity is "little". Manifacturing systems which performs machinery processes are in this category.
 
 \subsection{Computerized manifacturing support systems}
+Automating the part of the production system devoted to manifacturing support is in order to reduce the manual and clerical required effort. In this context the term \textbf{Computer Integrated Manifacturing (CIM)} refers to the pervasive use of computers to \textit{design products}, \textit{plan the production}, \textit{control the operations} and so on. Other terms are used to indicate components of the CIM, in particular the \textit{Computer Aided Design (CAD)} supports the the design of the product, while \textit{Computer-Aided manifacturing (CAM)} is used for functions related to the planning.\\
 
-\subsection{Continuous control}
-\subsection{Discrete control}
-\subsection{How computers are involved in control}
+A core operation in automation is \textbf{control}, which can be practically carried out using an \textbf{open-loop procedure} (or \textit{feedforward}) or in a \textbf{closed-loop} fashion, which exploting the negative feedback principle makes the overall system capable to correct the actions to be performed. Such a type of control strategy is used in the great majority of the application, this is why we focus on automation system which are based on them.
+
+\subsection{Closed-loop automation system}
+A \textbf{closed-loop automation system} can be divided into three subsystems: (i) Instrumentation subsystem, (ii) Control subsystem, (iii) Human-interface subsystem.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.5]{img/closed_loop_automation.png}
+\end{figure}
+
+\subsubsection{i) Instrumentation subsystem}
+Is the part devoted to the acquirement of information related to the behaviour of the process (by measuring its variables), such measurements are then sent to a conditioning circuit and then to the control subsystem. \\ 
+The instrumentation devices (practically \textbf{sensors}) have different structures according to the input and output signals to be measured. They can be both analog or digital. Moreover they can be classified as \textbf{transducer} if their output is sent over short distances, \textbf{transmitter} if the output signal is sent over long distances.
+
+\subsubsection{ii) Control subsystem}
+It is the heart of any closed-loop automated system and it is in charge for carrying out several (basic) functions regarding: 
+\begin{itemize}
+    \itemsep-0.3em
+    \item \textsf{Instrumentation subsystem}, in particular measured variables are compared to reference values in order to steer the control action through a certain direction by using again the instrumentation; 
+    \item \textsf{Human Interface subsystem}, in particular the associated information are an input of the control part which through the instrumentation sends information to the process.
+\end{itemize}
+
+
+\subsubsection{iii) Human-Interface subsystem}
+
+\subsubsection{How computers are involved in control}
 
 
 \section{Levels of automation}
