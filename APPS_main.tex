@@ -1,0 +1,39 @@
+\documentclass[a4paper, 12pt]{report}
+\include{packages.tex}
+\usepackage{biblatex} %Imports biblatex package
+\addbibresource{biblio_ROB.bib} %Import the bibliography file
+\usepackage{longtable}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+\pagestyle{headings}
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+    \includegraphics[width=0.35\textwidth]{img/logo_Polito_nuovo.png} % Sostituisci con il nome del tuo file
+    \vfill
+    {\Huge \textbf{AUTOMATION AND PLANNING OF}\\[0.1cm]
+    \textbf{ PRODUCTION SYSTEMS}\\[1cm]
+    \textit{Lecture notes}}\\[2cm]
+
+    \includegraphics[scale=0.12]{img/imgAutomation.png}\\[3cm]
+    
+    {\Large \textsf{Carlo Migliaccio}}\\[0.2cm]
+    {\large \textsf{Master's Degree in Computer Engineering (LM-32)}}\\[1.5cm]
+    {\large Academic Year 2024/25}\\[2cm]
+    \vfill
+\end{titlepage}
+\tableofcontents
+
+    \input{Chapters/Ch1_Intro.tex}
+    \input{Chapters/Ch2_Manifacturing.tex}
+
+\printbibliography
+
+
+\end{document}
