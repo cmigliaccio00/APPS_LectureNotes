@@ -67,11 +67,93 @@ It is the heart of any closed-loop automated system and it is in charge for carr
     \item \textsf{Instrumentation subsystem}, in particular measured variables are compared to reference values in order to steer the control action through a certain direction by using again the instrumentation; 
     \item \textsf{Human Interface subsystem}, in particular the associated information are an input of the control part which through the instrumentation sends information to the process.
 \end{itemize}
-
+Other advanced tasks of control systems are: i) \textit{safety monitorning} in which some sensors are used in order to track potentially dangerous operations; ii) \textit{maintenance and repair diagnostic} in which the system assists in identifying the source of potential failures; iii) \textit{error detection and recovery} the error detection step uses the available sensor to pick data, classify the error and adopt the needed operation so that the system could achieve again the normal status.
 
 \subsubsection{iii) Human-Interface subsystem}
+The \textbf{Human interface} is very important since allows the human to interact with the process in order to change its behaviour. Anyway, if a manual change is not needed the operator can observe it and eventually steer the direction of the process being carried out. The interaction between humans and the process is done essentially by using \textbf{valves/breakings} in order to force the process going through a certain direction.
 
-\subsubsection{How computers are involved in control}
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.5]{img/hmi.png}
+    \caption{Human-Machine Interface}
+\end{figure}
 
+\subsubsection{\textsc{How computers are involved in control}}
+Computers can be used in automating production systems in different modalities. In the following we propose a brief review.
+\begin{description}
+    \item[\textsf{Continuous control}] Here the objective is \textit{keep the value of an output value at a certain desired level} (clearly this concept can be extended, in the sense that in industrial field many different variables can be \textbf{regulated}). Such a type of controllers can be implemented through \textbf{embedded systems} (mostly operational amplifiers, resistors and capacitors). An example could be the control of the output of a chemical reaction. To be more specific we can distinguish the following tipologies of continuous control: 
+    \begin{itemize}
+        \itemsep-0.3em
+        \item \textbf{Regulatory control} where the objective is to maintain the process performacnce within a given tolerance, a compensating action is taken whether there is an output which is different than the desired one (that is the same to state that thee is a non-zero reference tracking error).
+        \item \textbf{Feedback-Feedforward control} In presence of disturbances a feedforward controller can be introduced in order to sense and compensate its effect;
+        \item \textbf{Adaptive control} It is particularly useful in order to control time-variant systems or to control systems in a time-variant environment. After having identified what are the varied variables, and what should be changed into the control, a modification is implemented.
+    \end{itemize}
+    \item[\textsf{Discrete control}] In this case the variables of the system are changed at discrete time, moreover also the action to be performed are discrete typically ON/OFF decisions. This type of control is implemented by using \textbf{PLCs}. This can be event driven (the system state is changed) or time-driven (a certain amount of time is spent).
+\end{description}
+
+\begin{remark} 
+    \textit{Continuous control strategies} can be also implemented by using digital controllers. In this case the controller is put in an A/D/A chain in order to properly convert relevant signals. By using the digital control approach one is able to perform more complex control actions, think about input constraints, nonlinearities and so on.
+\end{remark}
+
+To conclude this paragraph we provide a glossary with some important concept together with their definition.
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{p{5cm} p{10cm}}
+        \toprule
+        \textbf{Numerical control}&{Concerns the use of a computers or a microcontroller in order to control a  \textit{machine tool} by using a program with a sequence of operations (see G-Code)}\\
+        \midrule
+        \textbf{Programmable Logic Controllers (PLCs)}&{They were introduced in the 70s to substitute electromechanical relays, they can be programmed in order to perform timing, sequencing and counting operations}\\
+        \midrule
+        \textbf{Supervisory control}&{It is applied to an higher level than the process, and the objective is to optimize some well-defined function}\\
+        \midrule
+        \textbf{Distributed control systems}&{It is made up of a communication network between computers and PLCs in order to distribute as much as possible the process workload}. In this context there is a central control room in which Supervisory control happens and local operator stations are present in ordet to introduce redundancy.\\
+        \bottomrule
+    \end{tabular}
+\end{table}
 
 \section{Levels of automation}
+We have seen that a production system is the composition of different subsystems than can be themselves automated, this is the same to say that in a factory we can talk about automation at different levels. 
+\begin{enumerate}
+    \itemsep-0.3em
+    \item \emph{Device level} Is the lowest level and it is made up of the different components of a single machine. For example at device level we have the feedback loop controlling a single manipulator arm;
+    \item \emph{Machine level} Putting together all the parts of a device, control happens at machine level. Typical actions at this stage are performing some basic functions described by a program. 
+    \item \emph{Cell level or system level} A cell is nothing but a group of machines connected each other by a computer to which is associated a certain function for the manifacturing system. Typical control functions are the coordination between different machines in order to perform a certain task.
+    \item \emph{Plant level} This is the factory or production system level and it receives instructions from the enterprise level and translate them into process planning, purchasing and quality control. At this level control is implemented by using a \textbf{SCADA (Supervisory control and Data Acquisition)} which: (i) displays the current state of the process; (ii) displays alarms and error logs; displays the trends analyzing them.
+    \item \emph{Enterprise level} the control actions at this stage are in order to manage the company.
+\end{enumerate}
+
+What is interesting to analyzein this form of hierarchy is that \textit{the higher the level, the longest the response time with respect to the control actions}. Moreover the decisions are less but more complicated ones, the same holds for the quantity of informations that flows from one level to another.
+
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.6]{img/automation_level.png}
+    \caption{Different levels of automation}
+\end{figure}
+
+\section{Operation and Process Databases}
+In an automated production system, some databases are used in order to store relevant information about the single operations or the process. 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.9]{img/Databases.png}
+    \caption{Databases in automated manifacturing system}
+    \label{fig:Databases}
+\end{figure}
+
+The \Cref{fig:Databases} shows the interactions between the different parts of the automated production system and the databases themselves. We can distinguish:
+\begin{itemize}
+    \itemsep-0.3em
+    \item \textsf{Process Database} this keeps the latest known states of the plant (the granularity of the tracked operations are of the order of the day, hour or minute);
+    \item \textsf{Historical Database} registers snapshot (namely \texttt{VIEW}) from the historical database capturing what happened to the plant in a given period (eg. a bimester, a semester...)
+    \item \textsf{Knowledge Database} Is the most particular database which comprises a mixture of process and history data in order to track solved issues, trouble-shooting procedures, documentation and so on.
+\end{itemize}
+
+In order to conclude this chapter we present an example of automated industrial production system, highlighting the different levels of automation and used devices and protocols (\textit{ABB Industrial IT}).
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.9]{img/ABB.png}
+    \caption{ABB Industrial IT}
+\end{figure}
