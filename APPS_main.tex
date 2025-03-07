@@ -8,10 +8,16 @@
 
 \pagestyle{headings}
 
+\usepackage{minitoc}
+\mtcsetdepth{minitoc}{1}
+
+\renewcommand{\mtctitle}{In this chapter we will see...}
+
 \theoremstyle{remark}
 \newtheorem*{remark}{Remark}
 
 \begin{document}
+\dominitoc
 
 \begin{titlepage}
     \centering
@@ -32,6 +38,7 @@
 
     \input{Chapters/Ch1_Intro.tex}
     \input{Chapters/Ch2_Manifacturing.tex}
+    \input{Chapters/Ch3_PLCs.tex}
 
 \printbibliography
 
