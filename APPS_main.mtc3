@@ -1,13 +1,12 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.1}Industrial Automation Hardware}{\reset@font\mtcSfont 25}{section.3.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.2}The advent of PLCs}{\reset@font\mtcSfont 26}{section.3.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.1}PLC connections}{\reset@font\mtcSSfont 27}{subsection.3.2.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.3}Ladder diagrams}{\reset@font\mtcSfont 27}{section.3.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.1}Ladder logic Inputs}{\reset@font\mtcSSfont 28}{subsection.3.3.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.2}Ladder logic Outputs}{\reset@font\mtcSSfont 28}{subsection.3.3.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.3}Example: Design of an alarm for an house}{\reset@font\mtcSSfont 28}{subsection.3.3.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.4}Latch, Counters, Timers}{\reset@font\mtcSSfont 28}{subsection.3.3.4}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.4}Examples on Ladder schematics}{\reset@font\mtcSfont 28}{section.3.4}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode E1: Basic Logic Functions}{\reset@font\mtcSSSfont 28}{section*.19}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Car Safety system}{\reset@font\mtcSSSfont 28}{section*.20}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Motor Forward/Reverse}{\reset@font\mtcSSSfont 28}{section*.21}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode A Burglar alarm}{\reset@font\mtcSSSfont 28}{section*.22}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.1}Industrial Automation Hardware}{\reset@font\mtcSfont 24}{section.3.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.2}The advent of PLCs}{\reset@font\mtcSfont 25}{section.3.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.1}PLC connections}{\reset@font\mtcSSfont 26}{subsection.3.2.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.3}Ladder diagrams}{\reset@font\mtcSfont 26}{section.3.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.1}Ladder logic Inputs}{\reset@font\mtcSSfont 27}{subsection.3.3.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.2}Ladder logic Outputs}{\reset@font\mtcSSfont 27}{subsection.3.3.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.3}Example: Design of an alarm for an house}{\reset@font\mtcSSfont 27}{subsection.3.3.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.4}Latches, Counters, Timers}{\reset@font\mtcSSfont 28}{subsection.3.3.4}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Latches}{\reset@font\mtcSSSfont 29}{section*.19}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Timers}{\reset@font\mtcSSSfont 30}{section*.20}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Counters}{\reset@font\mtcSSSfont 31}{section*.21}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Internal Bits}{\reset@font\mtcSSSfont 31}{section*.22}}
